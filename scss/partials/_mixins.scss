@@ -1,0 +1,8 @@
+// get google fonts
+@mixin google-font($text-font) {
+	$font: unquote($text-font);
+	@import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
+
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');

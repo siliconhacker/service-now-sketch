@@ -1,0 +1,285 @@
+@import "compass";
+@import "susy";
+@import "compass/reset";
+@import "partials/variables";
+@import "partials/mixins";
+
+// set up a grid
+$susy: (
+  columns: 16,
+  // debug: (image: show),
+  global-box-sizing: border-sizing
+);
+
+// measure to border box
+@include border-box-sizing;
+
+// set up container view
+.container {
+  height: 100vh;
+  @include container($container-width);
+}
+
+// service fonts
+@include google-font("Open+Sans:300");
+
+
+/////////////service now custom
+section.service-header {
+  
+  .service-header__nav-menu {
+    height: 34.5px;
+  }
+  
+  .service-header__search-bar {
+    background-color: $service-color-background-footer;
+    height: 36px;
+  }
+}
+
+
+section.service-hero {
+  height: 61px;
+  background-color: $hero-color-background;
+  background-color: $service-color-background-footer;
+
+  .service-hero__content {
+    padding-top: 18.4px;
+    text-align: center;
+    height: 15px;
+    font-family: $text-font;
+    font-size: 17px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    color: $hero-color;  
+  }
+
+  .service-hero__content--highlight {
+    color: $hero-color-highlight;
+  }
+}
+
+
+
+section.service-home {
+    text-align: center;
+
+  .service-home__nlf-input {
+    padding-top: 35.1px;
+    font-family: $text-font;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    color: $service-color;
+
+    p {  
+      margin: 0 auto;
+      width: 360px;
+    }
+
+    select {
+      font-size: 24px;
+      // line-height: 1.67;
+      // min-width: 10%;
+      // align-items:center;
+      // background-attachment:scroll;
+      // background-clip:border-box;
+      // background-color:rgba(0, 0, 0, 0);
+      // background-image:none;
+      // background-origin:padding-box;
+      // background-position-x:0%;
+      // background-position-y:0%;
+      // background-size:auto;
+      border-bottom-color:rgb(177, 73, 67);
+      // border-bottom-left-radius:0px;
+      // border-bottom-right-radius:0px;
+      border-bottom-style:solid;
+      // border-bottom-width:0.8px;
+      // border-image-outset:0px;
+      // border-image-repeat:stretch;
+      // border-image-slice:100%;
+      // border-image-source:none;
+      // border-image-width:1;
+      border-left-color:transparent;
+      // border-left-style:none;
+      // border-left-width:0px;
+      border-right-color:transparent;
+      // border-right-style:none;
+      // border-right-width:0px;
+      border-top-color:transparent;
+      // border-top-left-radius:0px;
+      // border-top-right-radius:0px;
+      // border-top-style:none;
+      // border-top-width:0px;
+      // box-sizing:border-box;
+      color:rgb(177, 73, 67);
+      cursor:pointer;
+      // display:inline-block;
+      // font-family:Lato, Calibri, Arial, sans-serif;
+      // font-size:64px;
+      // font-stretch:normal;
+      // font-style:normal;
+      // font-variant-caps:normal;
+      // font-variant-ligatures:normal;
+      // font-variant-numeric:normal;
+      // font-weight:300;
+      // height:96.8px;
+      // letter-spacing:normal;
+      // line-height:96px;
+      // margin-bo
+      // ttom:0px;
+      // margin-left:0px;
+      // margin-right:0px;
+      // margin-top:0px;
+      // overflow-x:visible;
+      // overflow-y:visible;
+      // padding-bottom:0px;
+      // padding-left:0px;
+      // padding-right:0px;
+      // padding-top:0px;
+      // text-align:start;
+      // text-indent:0px;
+      // text-rendering:auto;
+      // text-shadow:none;
+      // text-transform:none;
+      // white-space:pre;
+      // width:238.4px;
+      // word-spacing:0px;
+      // writing-mode:horizontal-tb;
+      -webkit-appearance:none;
+      -webkit-rtl-ordering:logical;
+      -webkit-border-image:none;
+      
+      &:active, &:focus {
+          outline: none;
+      }
+
+    }
+
+  }
+
+  .service-home__nlf-button button{
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: $hero-color-highlight;
+    font-family: $text-font;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    color: $service-color-button;    
+  }
+}
+
+.service-home__divider-line {
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 268.5px;
+  height: 1.5px;
+  border: solid 0.5px $service-divider-line;
+}
+
+.service-home--flex,
+.service-footer--flex {
+  display: flex;
+  margin: 0 auto;
+  width: 360px;
+}
+
+.service-home__solution-submit {
+  text-align: center;
+  width: 118.5px;
+  margin: 0 auto;
+  margin-top: 32.5px;
+
+  .service-home__solution-icon {
+    img {
+      width: 48px;
+      height: 45.5px;
+    }
+  }
+ 
+  .service-home__solution-links {
+    a{
+      font-family: $text-font;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.54;
+      color: $service-color;
+    }
+  }
+}
+
+.service-home__win-submit {
+  text-align: center;
+  width: 147px;
+  margin: 0 auto;
+  margin-top: 33.5px;
+  margin-left: 66.5px;
+
+  .service-home__win-icon {
+    img {
+      width: 45.5px;
+      height: 45.5px;
+    }
+  }
+ 
+  .service-home__win-links {
+    a{
+      font-family: $text-font;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.54;
+      color: $service-color;
+    }
+  }
+}
+
+
+section.service-footer {
+  margin-top: 163.5px;
+  height: 230px;
+  background-color: $service-color-background-footer;
+  line-height: 2.07;
+  padding-top: 47px;
+  
+  .service-footer__group-1{
+    width: 54px;
+  }
+
+  .service-footer__group-2{
+    margin-left: 50px;
+    width: 47px;
+  }
+
+  .service-footer__group-3{
+    margin-left: 50px;
+    width: 60px;
+  }
+
+  a {
+    font-family: $text-font;
+    font-size: 7px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: $service-color-footer;
+    text-decoration: none;  
+  
+    &:active, &:focus {
+        outline: none;
+    }
+  }    
+
+
+}
