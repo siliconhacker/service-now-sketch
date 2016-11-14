@@ -99,7 +99,7 @@ section.service-header .service-header__search-bar {
 section.service-hero {
   height: 61px;
   background-color: #d8d8d8;
-  background-color: #333333;
+  background-image: url(../images/bg-welcome-hero.png);
 }
 /* line 46, ../scss/main.scss */
 section.service-hero .service-hero__content {
@@ -111,18 +111,19 @@ section.service-hero .service-hero__content {
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
+  text-rendering: optimizeLegibility;
   color: #adadad;
 }
-/* line 58, ../scss/main.scss */
+/* line 59, ../scss/main.scss */
 section.service-hero .service-hero__content--highlight {
   color: #e11e25;
 }
 
-/* line 65, ../scss/main.scss */
+/* line 66, ../scss/main.scss */
 section.service-home {
   text-align: center;
 }
-/* line 68, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 section.service-home .service-home__nlf-input {
   padding-top: 35.1px;
   font-family: "Open Sans", sans-serif;
@@ -130,33 +131,31 @@ section.service-home .service-home__nlf-input {
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
+  text-rendering: optimizeLegibility;
   line-height: 1.67;
   color: #4a4a4a;
 }
-/* line 78, ../scss/main.scss */
+/* line 80, ../scss/main.scss */
 section.service-home .service-home__nlf-input p {
   margin: 0 auto;
-  width: 360px;
+  width: 450px;
 }
-/* line 83, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 section.service-home .service-home__nlf-input select {
   font-size: 24px;
-  border-bottom-color: #b14943;
-  border-bottom-style: solid;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-top-color: transparent;
+  border: none;
   color: #b14943;
   cursor: pointer;
+  text-decoration: underline;
   -webkit-appearance: none;
   -webkit-rtl-ordering: logical;
   -webkit-border-image: none;
 }
-/* line 156, ../scss/main.scss */
+/* line 96, ../scss/main.scss */
 section.service-home .service-home__nlf-input select:active, section.service-home .service-home__nlf-input select:focus {
   outline: none;
 }
-/* line 164, ../scss/main.scss */
+/* line 104, ../scss/main.scss */
 section.service-home .service-home__nlf-button button {
   margin-top: 20px;
   width: 80px;
@@ -169,10 +168,11 @@ section.service-home .service-home__nlf-button button {
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
+  text-rendering: optimizeLegibility;
   color: #ffffff;
 }
 
-/* line 180, ../scss/main.scss */
+/* line 121, ../scss/main.scss */
 .service-home__divider-line {
   margin: 0 auto;
   margin-top: 35px;
@@ -181,7 +181,7 @@ section.service-home .service-home__nlf-button button {
   border: solid 0.5px #b1b1b1;
 }
 
-/* line 188, ../scss/main.scss */
+/* line 129, ../scss/main.scss */
 .service-home--flex,
 .service-footer--flex {
   display: flex;
@@ -189,30 +189,31 @@ section.service-home .service-home__nlf-button button {
   width: 360px;
 }
 
-/* line 195, ../scss/main.scss */
+/* line 136, ../scss/main.scss */
 .service-home__solution-submit {
   text-align: center;
   width: 118.5px;
   margin: 0 auto;
   margin-top: 32.5px;
 }
-/* line 202, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 .service-home__solution-submit .service-home__solution-icon img {
   width: 48px;
   height: 45.5px;
 }
-/* line 209, ../scss/main.scss */
+/* line 150, ../scss/main.scss */
 .service-home__solution-submit .service-home__solution-links a {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
+  text-rendering: optimizeLegibility;
   line-height: 2.54;
   color: #4a4a4a;
 }
 
-/* line 221, ../scss/main.scss */
+/* line 163, ../scss/main.scss */
 .service-home__win-submit {
   text-align: center;
   width: 147px;
@@ -220,23 +221,24 @@ section.service-home .service-home__nlf-button button {
   margin-top: 33.5px;
   margin-left: 66.5px;
 }
-/* line 229, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 .service-home__win-submit .service-home__win-icon img {
   width: 45.5px;
   height: 45.5px;
 }
-/* line 236, ../scss/main.scss */
+/* line 178, ../scss/main.scss */
 .service-home__win-submit .service-home__win-links a {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
+  text-rendering: optimizeLegibility;
   line-height: 2.54;
   color: #4a4a4a;
 }
 
-/* line 249, ../scss/main.scss */
+/* line 192, ../scss/main.scss */
 section.service-footer {
   margin-top: 163.5px;
   height: 230px;
@@ -244,21 +246,21 @@ section.service-footer {
   line-height: 2.07;
   padding-top: 47px;
 }
-/* line 256, ../scss/main.scss */
+/* line 199, ../scss/main.scss */
 section.service-footer .service-footer__group-1 {
   width: 54px;
 }
-/* line 260, ../scss/main.scss */
+/* line 203, ../scss/main.scss */
 section.service-footer .service-footer__group-2 {
   margin-left: 50px;
   width: 47px;
 }
-/* line 265, ../scss/main.scss */
+/* line 208, ../scss/main.scss */
 section.service-footer .service-footer__group-3 {
   margin-left: 50px;
   width: 60px;
 }
-/* line 270, ../scss/main.scss */
+/* line 213, ../scss/main.scss */
 section.service-footer a {
   font-family: "Open Sans", sans-serif;
   font-size: 7px;
@@ -267,8 +269,9 @@ section.service-footer a {
   font-stretch: normal;
   color: #dfdfdf;
   text-decoration: none;
+  text-rendering: optimizeLegibility;
 }
-/* line 279, ../scss/main.scss */
+/* line 223, ../scss/main.scss */
 section.service-footer a:active, section.service-footer a:focus {
   outline: none;
 }

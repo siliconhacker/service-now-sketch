@@ -1,24 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="serviceApp">
 <head>
   <meta charset="utf-8">
   <title>Service Now Sketch</title>
   <link rel="stylesheet" href="css/main.css">
-  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script>
+  <script type="text/javascript" src="js/serviceData.js"></script>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
 
-<body>
+<body ng-controller="ServiceCtrl">
 <div class="container">
   <section class="service-header">
     <div class="service-header__nav-menu">
       <img src="images/top.jpg" alt="jpg1">
     </div>
     <div class="service-header__search-bar">
-      <!-- <img src="images/search-bar.jpg" alt="jpg2"> -->
     </div>
   </section>
 
@@ -31,31 +31,46 @@
 
   <!-- main body nlf functions -->
   <section class="service-home">
+   <div class="service-home__nlf-input">
+          <div ng-switch="jData">
+      <p>I need a  
+          <select ng-model="jData">
+          <option value="">any</option>
+          <option value="jSolutions" selected>solution</option>
+          <option value="jSolutionsWins">solution wins</option>
+          </select>
+            <span ng-switch-when="jSolutions">
+            <span> for </span>
+              <select ng-model="selectedjSolutions1" 
+              ng-options="item.industry as item.industry for item in jSolutions">
+                <option value="">any industry</option>
+              </select><span> and </span>
+              <select ng-model="selectedjSolutions2" 
+              ng-options="item.product as item.product for item in jSolutions">
+                <option value="">any product</option>
+              </select>
+            </span>
+            <span ng-switch-when="jSolutionsWins">
+            <span> for </span>
+              <select ng-model="selectedjSolutions3" 
+              ng-options="item.industry as item.industry for item in jSolutionsWins">
+                <option value="">any industry</option>
+              </select><span> and </span>
+              <select ng-model="selectedjSolutions4" 
+              ng-options="item.product as item.product for item in jSolutionsWins">
+                <option value="">any product</option>
+              </select>
+            </span>
+        </p>
+          </div>
+      </div>  
 
     <!-- main body search tool -->
 <!--     <div class="service-home__nlf-input">
       <p>I need a solution for any industry and any product.</p>
-    </div>  --> 
-    
-    <div class="service-home__nlf-input">
-      <p>I need a  
-        <select>
-          <option value="1" selected>solution</option>
-          <option value="2">solution win</option>
-        </select>
-        for 
-        <select>
-          <option value="1" selected>any industry</option>
-          <option value="2">other industry</option>
-        </select>
-         and 
-        <select>
-          <option value="1" selected>any product</option>
-          <option value="2">other product</option>
-        </select>        
-      </p>
     </div>  
-    
+     -->
+     
     <!-- main search button -->
     <div class="service-home__nlf-button">
       <button>Find it!  

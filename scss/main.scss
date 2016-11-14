@@ -41,7 +41,7 @@ section.service-header {
 section.service-hero {
   height: 61px;
   background-color: $hero-color-background;
-  background-color: $service-color-background-footer;
+  background-image: url(../images/bg-welcome-hero.png);
 
   .service-hero__content {
     padding-top: 18.4px;
@@ -52,6 +52,7 @@ section.service-hero {
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
+    text-rendering: optimizeLegibility;
     color: $hero-color;  
   }
 
@@ -72,83 +73,22 @@ section.service-home {
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
+    text-rendering: optimizeLegibility;
     line-height: 1.67;
     color: $service-color;
 
     p {  
       margin: 0 auto;
-      width: 360px;
+      // width: 360px;
+      width: 450px;
     }
 
     select {
       font-size: 24px;
-      // line-height: 1.67;
-      // min-width: 10%;
-      // align-items:center;
-      // background-attachment:scroll;
-      // background-clip:border-box;
-      // background-color:rgba(0, 0, 0, 0);
-      // background-image:none;
-      // background-origin:padding-box;
-      // background-position-x:0%;
-      // background-position-y:0%;
-      // background-size:auto;
-      border-bottom-color:rgb(177, 73, 67);
-      // border-bottom-left-radius:0px;
-      // border-bottom-right-radius:0px;
-      border-bottom-style:solid;
-      // border-bottom-width:0.8px;
-      // border-image-outset:0px;
-      // border-image-repeat:stretch;
-      // border-image-slice:100%;
-      // border-image-source:none;
-      // border-image-width:1;
-      border-left-color:transparent;
-      // border-left-style:none;
-      // border-left-width:0px;
-      border-right-color:transparent;
-      // border-right-style:none;
-      // border-right-width:0px;
-      border-top-color:transparent;
-      // border-top-left-radius:0px;
-      // border-top-right-radius:0px;
-      // border-top-style:none;
-      // border-top-width:0px;
-      // box-sizing:border-box;
+      border: none;
       color:rgb(177, 73, 67);
       cursor:pointer;
-      // display:inline-block;
-      // font-family:Lato, Calibri, Arial, sans-serif;
-      // font-size:64px;
-      // font-stretch:normal;
-      // font-style:normal;
-      // font-variant-caps:normal;
-      // font-variant-ligatures:normal;
-      // font-variant-numeric:normal;
-      // font-weight:300;
-      // height:96.8px;
-      // letter-spacing:normal;
-      // line-height:96px;
-      // margin-bo
-      // ttom:0px;
-      // margin-left:0px;
-      // margin-right:0px;
-      // margin-top:0px;
-      // overflow-x:visible;
-      // overflow-y:visible;
-      // padding-bottom:0px;
-      // padding-left:0px;
-      // padding-right:0px;
-      // padding-top:0px;
-      // text-align:start;
-      // text-indent:0px;
-      // text-rendering:auto;
-      // text-shadow:none;
-      // text-transform:none;
-      // white-space:pre;
-      // width:238.4px;
-      // word-spacing:0px;
-      // writing-mode:horizontal-tb;
+      text-decoration: underline;
       -webkit-appearance:none;
       -webkit-rtl-ordering:logical;
       -webkit-border-image:none;
@@ -173,6 +113,7 @@ section.service-home {
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
+    text-rendering: optimizeLegibility;
     color: $service-color-button;    
   }
 }
@@ -212,6 +153,7 @@ section.service-home {
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
+      text-rendering: optimizeLegibility;
       line-height: 2.54;
       color: $service-color;
     }
@@ -239,6 +181,7 @@ section.service-home {
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
+      text-rendering: optimizeLegibility;
       line-height: 2.54;
       color: $service-color;
     }
@@ -275,7 +218,8 @@ section.service-footer {
     font-stretch: normal;
     color: $service-color-footer;
     text-decoration: none;  
-  
+    text-rendering: optimizeLegibility;
+
     &:active, &:focus {
         outline: none;
     }
