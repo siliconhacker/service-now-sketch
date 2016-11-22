@@ -138,7 +138,7 @@ section.service-home .service-home__nlf-input {
 /* line 80, ../scss/main.scss */
 section.service-home .service-home__nlf-input p {
   margin: 0 auto;
-  width: 450px;
+  width: 360px;
 }
 /* line 86, ../scss/main.scss */
 section.service-home .service-home__nlf-input select {
@@ -154,8 +154,16 @@ section.service-home .service-home__nlf-input select {
 /* line 96, ../scss/main.scss */
 section.service-home .service-home__nlf-input select:active, section.service-home .service-home__nlf-input select:focus {
   outline: none;
+  background-color: #e11e25;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  color: #eaeaea;
+  padding: 0 10px;
 }
-/* line 104, ../scss/main.scss */
+/* line 112, ../scss/main.scss */
 section.service-home .service-home__nlf-button button {
   margin-top: 20px;
   width: 80px;
@@ -172,7 +180,7 @@ section.service-home .service-home__nlf-button button {
   color: #ffffff;
 }
 
-/* line 121, ../scss/main.scss */
+/* line 129, ../scss/main.scss */
 .service-home__divider-line {
   margin: 0 auto;
   margin-top: 35px;
@@ -181,7 +189,7 @@ section.service-home .service-home__nlf-button button {
   border: solid 0.5px #b1b1b1;
 }
 
-/* line 129, ../scss/main.scss */
+/* line 137, ../scss/main.scss */
 .service-home--flex,
 .service-footer--flex {
   display: flex;
@@ -189,19 +197,19 @@ section.service-home .service-home__nlf-button button {
   width: 360px;
 }
 
-/* line 136, ../scss/main.scss */
+/* line 144, ../scss/main.scss */
 .service-home__solution-submit {
   text-align: center;
   width: 118.5px;
   margin: 0 auto;
   margin-top: 32.5px;
 }
-/* line 143, ../scss/main.scss */
+/* line 151, ../scss/main.scss */
 .service-home__solution-submit .service-home__solution-icon img {
   width: 48px;
   height: 45.5px;
 }
-/* line 150, ../scss/main.scss */
+/* line 158, ../scss/main.scss */
 .service-home__solution-submit .service-home__solution-links a {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -213,7 +221,7 @@ section.service-home .service-home__nlf-button button {
   color: #4a4a4a;
 }
 
-/* line 163, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 .service-home__win-submit {
   text-align: center;
   width: 147px;
@@ -221,12 +229,12 @@ section.service-home .service-home__nlf-button button {
   margin-top: 33.5px;
   margin-left: 66.5px;
 }
-/* line 171, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 .service-home__win-submit .service-home__win-icon img {
   width: 45.5px;
   height: 45.5px;
 }
-/* line 178, ../scss/main.scss */
+/* line 186, ../scss/main.scss */
 .service-home__win-submit .service-home__win-links a {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -238,7 +246,7 @@ section.service-home .service-home__nlf-button button {
   color: #4a4a4a;
 }
 
-/* line 192, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 section.service-footer {
   margin-top: 163.5px;
   height: 230px;
@@ -246,21 +254,21 @@ section.service-footer {
   line-height: 2.07;
   padding-top: 47px;
 }
-/* line 199, ../scss/main.scss */
+/* line 207, ../scss/main.scss */
 section.service-footer .service-footer__group-1 {
   width: 54px;
 }
-/* line 203, ../scss/main.scss */
+/* line 211, ../scss/main.scss */
 section.service-footer .service-footer__group-2 {
   margin-left: 50px;
   width: 47px;
 }
-/* line 208, ../scss/main.scss */
+/* line 216, ../scss/main.scss */
 section.service-footer .service-footer__group-3 {
   margin-left: 50px;
   width: 60px;
 }
-/* line 213, ../scss/main.scss */
+/* line 221, ../scss/main.scss */
 section.service-footer a {
   font-family: "Open Sans", sans-serif;
   font-size: 7px;
@@ -271,7 +279,7 @@ section.service-footer a {
   text-decoration: none;
   text-rendering: optimizeLegibility;
 }
-/* line 223, ../scss/main.scss */
+/* line 231, ../scss/main.scss */
 section.service-footer a:active, section.service-footer a:focus {
   outline: none;
 }
