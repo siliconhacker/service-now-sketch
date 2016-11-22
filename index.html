@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="serviceApp">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Service Now Sketch</title>
@@ -12,7 +12,7 @@
 </head>
 
 
-<body ng-controller="ServiceCtrl">
+<body ng-app="serviceApp">
 <div class="container">
   <section class="service-header">
     <div class="service-header__nav-menu">
@@ -30,39 +30,42 @@
   </section>
 
   <!-- main body nlf functions -->
-  <section class="service-home">
-   <div class="service-home__nlf-input">
+  <section class="service-home" ng-controller="ServiceCtrl">
+<div class="service-home__nlf-input">
           <div ng-switch="jData">
-      <p>I need a  
-          <select ng-model="jData">
-          <option value="">any</option>
-          <option value="jSolutions" selected>solution</option>
-          <option value="jSolutionsWins">solution wins</option>
-          </select>
-            <span ng-switch-when="jSolutions">
-            <span> for </span>
-              <select ng-model="selectedjSolutions1" 
-              ng-options="item.industry as item.industry for item in jSolutions">
-                <option value="">any industry</option>
-              </select><span> and </span>
-              <select ng-model="selectedjSolutions2" 
-              ng-options="item.product as item.product for item in jSolutions">
-                <option value="">any product</option>
+          <p>I need a  
+              <!--         1st switchboard -->
+              <select ng-model="$parent.jData" id="resizing_select1">
+              <option value="">any</option>
+              <option value="jSolutionsView" >solution</option>
+              <option value="jSolutionsWinsView">solution wins</option>
               </select>
-            </span>
-            <span ng-switch-when="jSolutionsWins">
-            <span> for </span>
-              <select ng-model="selectedjSolutions3" 
-              ng-options="item.industry as item.industry for item in jSolutionsWins">
-                <option value="">any industry</option>
-              </select><span> and </span>
-              <select ng-model="selectedjSolutions4" 
-              ng-options="item.product as item.product for item in jSolutionsWins">
-                <option value="">any product</option>
+
+              <!--         2nd solutions -->
+              <span ng-switch-when="jSolutionsView">
+              <span> for </span>
+              <select  ng-model="$parent.serviceSolutionIndustry"  >
+              <option ng-selected= "{{item.name === serviceSolutionIndustry}}" ng:repeat="item in jSolutions" value="{{item.name}}">{{item.industry}}</option>
               </select>
-            </span>
-        </p>
+              <span> and </span>
+              <select ng-model="$parent.serviceSolutionProduct">
+              <option ng-selected= "{{item.name === serviceSolutionProduct}}" ng:repeat="item in jSolutions2" value="{{item.name}}">{{item.product}}</option>
+              </select>
+              </span>
+              <!--         3rd wins -->
+              <span ng-switch-when="jSolutionsWinsView">
+              <span> for </span>
+              <select  ng-model="$parent.serviceWinsIndustry">
+              <option ng-selected= "{{item.name === serviceWinsIndustry}}" ng:repeat="item in jWins" value="{{item.name}}">{{item.industry}}</option>
+              </select>
+              <span> and </span>
+              <select ng-model="$parent.serviceWinsProduct">
+              <option ng-selected= "{{item.name === serviceWinsProduct}}" ng:repeat="item in jWins2" value="{{item.name}}">{{item.product}}</option>
+              </select>
+              </span>
+            </p>
           </div>
+  
       </div>  
 
     <!-- main body search tool -->
@@ -73,7 +76,7 @@
      
     <!-- main search button -->
     <div class="service-home__nlf-button">
-      <button>Find it!  
+      <button ng-click='whatsSelected()'>Find it!  
       </button>
     </div>
 
