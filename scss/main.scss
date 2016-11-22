@@ -79,8 +79,8 @@ section.service-home {
 
     p {  
       margin: 0 auto;
-      // width: 360px;
-      width: 450px;
+      width: 360px;
+      // width: 450px;
     }
 
     select {
@@ -94,7 +94,15 @@ section.service-home {
       -webkit-border-image:none;
       
       &:active, &:focus {
-          outline: none;
+            outline: none;
+            background-color: #e11e25;
+            font-family: "Open Sans", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.67;
+            color: #eaeaea;
+            padding: 0 10px;
       }
 
     }
